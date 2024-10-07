@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-area">
+           <h1 class="title">ROCK PAPER SCISSOR</h1>
+          <div id="display-result">
+            <p><span class="text-box">Player Move</span><span class="text-box">Computer Move</span></p>
+            <p id="displaycomputerMove"> </p>
+            <p id="displaypayerMove"></p>
+          </div>
+          <p id="result-js"></p>
+
+            <div class="confirm-card">
+                <p class="confrirm-text">Are you sure to Reset Score ?</p>
+                <button onclick="
+                  resetScore();
+                  confirmPopupClose();
+                " class="confirm-btn">Confirm</button> 
+                <button onclick="
+                confirmPopupClose();
+                " class="confirm-btn">Cancel</button>
+            </div>
+
+            <div class="game-button">
+                <button class="rock" id="rock"><img src="images/rock.png" alt=""></button>
+                <button class="paper" id="paper"><img src="images/paper.png" alt=""></button>
+                <button class="rock" id="scissor"><img src="images/scissor.png" alt=""></button>
+            </div>
+        </div>
+        <div id="result-display">
+            
+        </div>
+        <button onclick="
+          confirmPopupOpen();
+        " class="reset-score" id="popup">Reset Score</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

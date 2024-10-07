@@ -1,0 +1,125 @@
+body{
+    font-family: sans-serif;
+}
+.container{
+    height: 100%;
+    width: 100%;
+   background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+   background-position: center;
+   background-size: cover;
+    position: absolute;
+    text-align: center;
+}
+
+.game-area{
+    width: 500px;
+    height: 560px;
+    position: relative;
+    margin: 6px auto;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #fff;
+    background-size: cover;
+    overflow: hidden;
+    
+}
+.title{
+    padding: 20px; 
+}
+.game-button{
+    top:78%;
+    position: absolute;
+    left: 20%;
+    
+}
+.game-button button{
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    overflow: hidden;
+}
+.game-button img{
+    opacity:0.5;
+    width: 100px;
+    
+}
+.game-button img:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+#displaypayerMove{
+    rotate: 90deg;
+    margin-left: -61%;
+    margin-top: -45%;
+    overflow: hidden;
+}
+
+
+#displaycomputerMove{
+    rotate: -90deg ;
+    margin-right: -61%;
+    overflow: hidden;
+}
+#result-js{
+    border-radius: 15px;
+    margin: 0 15px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.text-box{
+    margin: 10px 14%;
+    padding:  0 0 4px;
+    border-bottom: 2px solid black;
+}
+
+#result-display{
+    padding: 4px 4px;
+    border-radius: 25px;
+    background-color: #fff;
+    width: 500px;
+    margin: 6px auto;
+   
+}
+
+.reset-score{
+    position: relative;
+    padding: 5px;
+    background-color: transparent;
+    border: 4px solid beige;
+    cursor: pointer;
+}
+
+
+.confirm-card{
+    background-image: url(images/popupbg.jpg);
+    color: #fff;
+    border: 1px solid black;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    width: 300px;
+    padding: 10px;
+    visibility: hidden;
+    transition: transform 0.3s;
+
+}
+.open-popup{
+    visibility: visible;
+    transform: scale(1.2);
+}
+.confrirm-text{
+    
+    font-size: 20px;
+}
+.confirm-btn{
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+
+
+ 
